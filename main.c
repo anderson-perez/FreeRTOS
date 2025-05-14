@@ -40,8 +40,11 @@ void main( void )
 {
     config_user_app();
   
-    xTaskCreate(tarefa_teste, "T", configMINIMAL_STACK_SIZE, NULL, 7, NULL); 
-    xTaskCreate(tarefa_teste_2, "T", configMINIMAL_STACK_SIZE, NULL, 7, NULL); 
+    //xTaskCreate(tarefa_teste, "T", configMINIMAL_STACK_SIZE, NULL, 7, NULL); 
+    //xTaskCreate(tarefa_teste_2, "T", configMINIMAL_STACK_SIZE, NULL, 7, NULL); 
+    
+    xTaskCreate(tarefa_escritor, "E", configMINIMAL_STACK_SIZE, NULL, 5, NULL); 
+    xTaskCreate(tarefa_leitor, "L", configMINIMAL_STACK_SIZE, NULL, 5, NULL); 
     
     /* Start the scheduler. */
     vTaskStartScheduler();
