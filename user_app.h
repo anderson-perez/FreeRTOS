@@ -15,5 +15,11 @@ void tarefa_teste_2();
 void tarefa_escritor();
 void tarefa_leitor();
 
+// Exemplo conversor AD
+void config_adc();
+void tarefa_potenciometro();
+void tarefa_led();
+uint16_t le_adc();
+
 #endif	/* USER_APP_H */
 
