@@ -34,6 +34,9 @@
     extern "C" {
 #endif
 /* *INDENT-ON* */
+        
+#include <xc.h>
+       
 
 /*-----------------------------------------------------------
  * Port specific definitions.
@@ -81,10 +84,10 @@ typedef unsigned short UBaseType_t;
 /*-----------------------------------------------------------*/
 
 /* Critical section management. */
-//#define portDISABLE_INTERRUPTS()    SET_CPU_IPL( configKERNEL_INTERRUPT_PRIORITY ); __asm volatile ( "NOP" )
-//#define portENABLE_INTERRUPTS()     SET_CPU_IPL( 0 )
-#define portDISABLE_INTERRUPTS()      __builtin_disable_interrupts();
-#define portENABLE_INTERRUPTS()       __builtin_enable_interrupts();
+#define portDISABLE_INTERRUPTS()    SET_CPU_IPL( configKERNEL_INTERRUPT_PRIORITY ); __asm volatile ( "NOP" )
+#define portENABLE_INTERRUPTS()     SET_CPU_IPL( 0 )
+//#define portDISABLE_INTERRUPTS()      __builtin_disable_interrupts();
+//#define portENABLE_INTERRUPTS()       __builtin_enable_interrupts();
     
 /* Note that exiting a critical sectino will set the IPL bits to 0, no matter
 what their value was prior to entering the critical section. */

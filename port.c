@@ -39,7 +39,7 @@
 /* Scheduler include files. */
 #include "FreeRTOS.h"
 #include "task.h"
-#include "xc.h"
+#include <xc.h>
 
 /* Hardware specifics. */
 #define portBIT_SET 1

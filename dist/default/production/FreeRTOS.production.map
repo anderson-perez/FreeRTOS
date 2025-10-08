@@ -83,11 +83,11 @@ section                    address   length (PC units)   length (bytes) (dec)
 -------                    -------   -----------------   --------------------
 .text                        0x200               0x1ec           0x2e2  (738)
 .const                       0x3ec                0x34            0x4e  (78)
-.text                        0x420              0x4a4c          0x6f72  (28530)
-.dinit                      0x4e6c                0x2e            0x45  (69)
-.text                       0x4e9a                0x38            0x54  (84)
+.text                        0x420              0x4ed2          0x763b  (30267)
+.dinit                      0x52f2                0x2e            0x45  (69)
+.text                       0x5320                0x38            0x54  (84)
 
-                 Total "program" memory used (bytes):         0x733b  (29499) 22%
+                 Total "program" memory used (bytes):         0x7a04  (31236) 23%
 
 
 "data" Memory  [Origin = 0x800, Length = 0x2000]
@@ -136,154 +136,154 @@ External Symbols in Program Memory (by address):
                   0x0003e0                  ___mulp32peds3
                   0x0003e0                  ___mulsi3
                   0x0003e0                  ___mulp32eds3
-                  0x0004ac                  _xTaskCreateStatic
-                  0x000548                  _xTaskCreate
-                  0x000724                  _vTaskDelete
-                  0x0007c4                  _xTaskDelayUntil
-                  0x000872                  _vTaskDelay
-                  0x0008ac                  _uxTaskPriorityGet
-                  0x0008ce                  _uxTaskPriorityGetFromISR
-                  0x0008f0                  _uxTaskBasePriorityGet
-                  0x000912                  _uxTaskBasePriorityGetFromISR
-                  0x000934                  _vTaskPrioritySet
-                  0x000a72                  _vTaskSuspend
-                  0x000b78                  _vTaskResume
-                  0x000c2e                  _xTaskResumeFromISR
-                  0x000da4                  _vTaskStartScheduler
-                  0x000de6                  _vTaskEndScheduler
-                  0x000e18                  _vTaskSuspendAll
-                  0x000e24                  _xTaskResumeAll
-                  0x000fb4                  _xTaskGetTickCount
-                  0x000fc0                  _xTaskGetTickCountFromISR
-                  0x000fd0                  _uxTaskGetNumberOfTasks
-                  0x000fd8                  _pcTaskGetName
-                  0x001002                  _xTaskGetStaticBuffers
-                  0x00107a                  _xTaskCatchUpTicks
-                  0x0010a6                  _xTaskIncrementTick
-                  0x00123a                  _vTaskSwitchContext
-                  0x0012ae                  _vTaskPlaceOnEventList
-                  0x0012d8                  _vTaskPlaceOnUnorderedEventList
-                  0x001348                  _vTaskPlaceOnEventListRestricted
-                  0x0013aa                  _xTaskRemoveFromEventList
-                  0x001508                  _vTaskRemoveFromUnorderedEventList
-                  0x001634                  _vTaskSetTimeOutState
-                  0x00165c                  _vTaskInternalSetTimeOutState
-                  0x001670                  _xTaskCheckForTimeOut
-                  0x001706                  _vTaskMissedYield
-                  0x001710                  build/default/production/tasks.o:_prvIdleTask
-                  0x0017e8                  _xTaskGetCurrentTaskHandle
-                  0x0017f4                  _xTaskGetCurrentTaskHandleForCore
-                  0x00180c                  _xTaskGetSchedulerState
-                  0x001830                  _xTaskPriorityInherit
-                  0x001916                  _xTaskPriorityDisinherit
-                  0x0019fa                  _vTaskPriorityDisinheritAfterTimeout
-                  0x001b00                  _uxTaskResetEventItemValue
-                  0x001b18                  _pvTaskIncrementMutexHeldCount
-                  0x001b34                  _ulTaskGenericNotifyTake
-                  0x001bfc                  _xTaskGenericNotifyWait
-                  0x001d14                  _xTaskGenericNotify
-                  0x001efa                  _xTaskGenericNotifyFromISR
-                  0x002124                  _vTaskGenericNotifyGiveFromISR
-                  0x00229c                  _xTaskGenericNotifyStateClear
-                  0x0022ec                  _ulTaskGenericNotifyValueClear
-                  0x0023f4                  _vApplicationGetIdleTaskMemory
-                  0x002412                  _vApplicationGetTimerTaskMemory
-                  0x002430                  _vTaskResetState
-                  0x002466                  _xQueueGenericReset
-                  0x00253c                  _xQueueGenericCreateStatic
-                  0x0025c6                  _xQueueGenericGetStaticBuffers
-                  0x002620                  _xQueueGenericCreate
-                  0x0026fe                  _xQueueCreateMutex
-                  0x00271e                  _xQueueCreateMutexStatic
-                  0x002744                  _xQueueGiveMutexRecursive
-                  0x002796                  _xQueueTakeMutexRecursive
-                  0x0027ec                  _xQueueCreateCountingSemaphoreStatic
-                  0x002838                  _xQueueCreateCountingSemaphore
-                  0x00287e                  _xQueueGenericSend
-                  0x0029ce                  _xQueueGenericSendFromISR
-                  0x002aba                  _xQueueGiveFromISR
-                  0x002b8c                  _xQueueReceive
-                  0x002cb4                  _xQueueSemaphoreTake
-                  0x002e02                  _xQueuePeek
-                  0x002f2e                  _xQueueReceiveFromISR
-                  0x002ff0                  _xQueuePeekFromISR
-                  0x00306c                  _uxQueueMessagesWaiting
-                  0x003090                  _uxQueueSpacesAvailable
-                  0x0030be                  _uxQueueMessagesWaitingFromISR
-                  0x0030e2                  _vQueueDelete
-                  0x00310a                  _uxQueueGetQueueItemSize
-                  0x003116                  _uxQueueGetQueueLength
-                  0x0032da                  _xQueueIsQueueEmptyFromISR
-                  0x00332e                  _xQueueIsQueueFullFromISR
-                  0x003362                  _vQueueWaitForMessageRestricted
-                  0x0033a8                  _xStreamBufferGenericCreate
-                  0x003454                  _xStreamBufferGenericCreateStatic
-                  0x003528                  _xStreamBufferGetStaticBuffers
-                  0x00358e                  _vStreamBufferDelete
-                  0x0035c4                  _xStreamBufferReset
-                  0x003626                  _xStreamBufferResetFromISR
-                  0x003688                  _xStreamBufferSetTriggerLevel
-                  0x0036cc                  _xStreamBufferSpacesAvailable
-                  0x00371a                  _xStreamBufferBytesAvailable
-                  0x00373e                  _xStreamBufferSend
-                  0x003878                  _xStreamBufferSendFromISR
-                  0x003986                  _xStreamBufferReceive
-                  0x003a8a                  _xStreamBufferNextMessageLengthBytes
-                  0x003af2                  _xStreamBufferReceiveFromISR
-                  0x003bf6                  _xStreamBufferIsEmpty
-                  0x003c2e                  _xStreamBufferIsFull
-                  0x003c78                  _xStreamBufferSendCompletedFromISR
-                  0x003cc6                  _xStreamBufferReceiveCompletedFromISR
-                  0x003ec4                  _uxStreamBufferGetStreamBufferNotificationIndex
-                  0x003ee4                  _vStreamBufferSetStreamBufferNotificationIndex
-                  0x003f3c                  _xTimerCreateTimerTask
-                  0x003f92                  _xTimerCreate
-                  0x003fc4                  _xTimerCreateStatic
-                  0x00406e                  _xTimerGenericCommandFromTask
-                  0x0040dc                  _xTimerGenericCommandFromISR
-                  0x004136                  _xTimerGetTimerDaemonTaskHandle
-                  0x00414e                  _xTimerGetPeriod
-                  0x00416e                  _vTimerSetReloadMode
-                  0x0041b0                  _xTimerGetReloadMode
-                  0x0041e8                  _uxTimerGetReloadMode
-                  0x0041f8                  _xTimerGetExpiryTime
-                  0x00421c                  _xTimerGetStaticBuffer
-                  0x004258                  _pcTimerGetName
-                  0x0042ee                  build/default/production/timers.o:_prvTimerTask
-                  0x004596                  _xTimerIsTimerActive
-                  0x0045ce                  _pvTimerGetTimerID
-                  0x0045f6                  _vTimerSetTimerID
-                  0x00461e                  _vTimerResetState
-                  0x004628                  _xEventGroupCreateStatic
-                  0x004670                  _xEventGroupCreate
-                  0x004694                  _xEventGroupSync
-                  0x004794                  _xEventGroupWaitBits
-                  0x0048c8                  _xEventGroupClearBits
-                  0x004914                  _xEventGroupGetBitsFromISR
-                  0x00492c                  _xEventGroupSetBits
-                  0x004a1a                  _vEventGroupDelete
-                  0x004a72                  _xEventGroupGetStaticBuffer
-                  0x004aba                  _vEventGroupSetBitsCallback
-                  0x004acc                  _vEventGroupClearBitsCallback
-                  0x004b16                  _pxPortInitialiseStack
-                  0x004ba6                  _xPortStartScheduler
-                  0x004bd4                  _vPortEndScheduler
-                  0x004c14                  _vPortEnterCritical
-                  0x004c28                  _vPortExitCritical
-                  0x004c52                  _vListInitialise
-                  0x004c84                  _vListInitialiseItem
-                  0x004c92                  _vListInsertEnd
-                  0x004cce                  _vListInsert
-                  0x004d32                  _uxListRemove
-                  0x004d7a                  _pvPortMalloc
-                  0x004de8                  _vPortFree
-                  0x004e00                  _vPortInitialiseBlocks
-                  0x004e08                  _xPortGetFreeHeapSize
-                  0x004e14                  _vPortHeapResetState
-                  0x004e1c                  _vPortYield
-                  0x004e9a                  _config_user_app
-                  0x004ea2                  _task_1
-                  0x004ebc                  _main
+                  0x0004be                  _xTaskCreateStatic
+                  0x00055a                  _xTaskCreate
+                  0x000742                  _vTaskDelete
+                  0x0007e8                  _xTaskDelayUntil
+                  0x0008a8                  _vTaskDelay
+                  0x0008e8                  _uxTaskPriorityGet
+                  0x00090a                  _uxTaskPriorityGetFromISR
+                  0x00092c                  _uxTaskBasePriorityGet
+                  0x00094e                  _uxTaskBasePriorityGetFromISR
+                  0x000970                  _vTaskPrioritySet
+                  0x000ab4                  _vTaskSuspend
+                  0x000bc6                  _vTaskResume
+                  0x000c82                  _xTaskResumeFromISR
+                  0x000dfe                  _vTaskStartScheduler
+                  0x000e4c                  _vTaskEndScheduler
+                  0x000e84                  _vTaskSuspendAll
+                  0x000e90                  _xTaskResumeAll
+                  0x001026                  _xTaskGetTickCount
+                  0x001032                  _xTaskGetTickCountFromISR
+                  0x001042                  _uxTaskGetNumberOfTasks
+                  0x00104a                  _pcTaskGetName
+                  0x00107a                  _xTaskGetStaticBuffers
+                  0x0010fe                  _xTaskCatchUpTicks
+                  0x001130                  _xTaskIncrementTick
+                  0x0012e0                  _vTaskSwitchContext
+                  0x00135a                  _vTaskPlaceOnEventList
+                  0x00138a                  _vTaskPlaceOnUnorderedEventList
+                  0x001406                  _vTaskPlaceOnEventListRestricted
+                  0x00146e                  _xTaskRemoveFromEventList
+                  0x0015d2                  _vTaskRemoveFromUnorderedEventList
+                  0x00170a                  _vTaskSetTimeOutState
+                  0x001738                  _vTaskInternalSetTimeOutState
+                  0x00174c                  _xTaskCheckForTimeOut
+                  0x0017ee                  _vTaskMissedYield
+                  0x0017f8                  build/default/production/tasks.o:_prvIdleTask
+                  0x0018d6                  _xTaskGetCurrentTaskHandle
+                  0x0018e2                  _xTaskGetCurrentTaskHandleForCore
+                  0x0018fa                  _xTaskGetSchedulerState
+                  0x00191e                  _xTaskPriorityInherit
+                  0x001a04                  _xTaskPriorityDisinherit
+                  0x001af4                  _vTaskPriorityDisinheritAfterTimeout
+                  0x001c06                  _uxTaskResetEventItemValue
+                  0x001c1e                  _pvTaskIncrementMutexHeldCount
+                  0x001c3a                  _ulTaskGenericNotifyTake
+                  0x001d08                  _xTaskGenericNotifyWait
+                  0x001e26                  _xTaskGenericNotify
+                  0x002024                  _xTaskGenericNotifyFromISR
+                  0x002266                  _vTaskGenericNotifyGiveFromISR
+                  0x0023f0                  _xTaskGenericNotifyStateClear
+                  0x002446                  _ulTaskGenericNotifyValueClear
+                  0x002554                  _vApplicationGetIdleTaskMemory
+                  0x002572                  _vApplicationGetTimerTaskMemory
+                  0x002590                  _vTaskResetState
+                  0x0025c6                  _xQueueGenericReset
+                  0x0026a8                  _xQueueGenericCreateStatic
+                  0x002744                  _xQueueGenericGetStaticBuffers
+                  0x0027aa                  _xQueueGenericCreate
+                  0x00288e                  _xQueueCreateMutex
+                  0x0028ae                  _xQueueCreateMutexStatic
+                  0x0028d4                  _xQueueGiveMutexRecursive
+                  0x00292c                  _xQueueTakeMutexRecursive
+                  0x002988                  _xQueueCreateCountingSemaphoreStatic
+                  0x0029da                  _xQueueCreateCountingSemaphore
+                  0x002a26                  _xQueueGenericSend
+                  0x002b8e                  _xQueueGenericSendFromISR
+                  0x002c92                  _xQueueGiveFromISR
+                  0x002d7c                  _xQueueReceive
+                  0x002eb6                  _xQueueSemaphoreTake
+                  0x003016                  _xQueuePeek
+                  0x003154                  _xQueueReceiveFromISR
+                  0x003228                  _xQueuePeekFromISR
+                  0x0032b6                  _uxQueueMessagesWaiting
+                  0x0032e0                  _uxQueueSpacesAvailable
+                  0x003314                  _uxQueueMessagesWaitingFromISR
+                  0x00333e                  _vQueueDelete
+                  0x00336c                  _uxQueueGetQueueItemSize
+                  0x003378                  _uxQueueGetQueueLength
+                  0x00353c                  _xQueueIsQueueEmptyFromISR
+                  0x003596                  _xQueueIsQueueFullFromISR
+                  0x0035d0                  _vQueueWaitForMessageRestricted
+                  0x003616                  _xStreamBufferGenericCreate
+                  0x0036da                  _xStreamBufferGenericCreateStatic
+                  0x0037d2                  _xStreamBufferGetStaticBuffers
+                  0x00384a                  _vStreamBufferDelete
+                  0x003886                  _xStreamBufferReset
+                  0x0038ee                  _xStreamBufferResetFromISR
+                  0x003956                  _xStreamBufferSetTriggerLevel
+                  0x0039a0                  _xStreamBufferSpacesAvailable
+                  0x0039f4                  _xStreamBufferBytesAvailable
+                  0x003a1e                  _xStreamBufferSend
+                  0x003b70                  _xStreamBufferSendFromISR
+                  0x003c90                  _xStreamBufferReceive
+                  0x003da6                  _xStreamBufferNextMessageLengthBytes
+                  0x003e1a                  _xStreamBufferReceiveFromISR
+                  0x003f2a                  _xStreamBufferIsEmpty
+                  0x003f68                  _xStreamBufferIsFull
+                  0x003fb8                  _xStreamBufferSendCompletedFromISR
+                  0x00400c                  _xStreamBufferReceiveCompletedFromISR
+                  0x00423a                  _uxStreamBufferGetStreamBufferNotificationIndex
+                  0x004260                  _vStreamBufferSetStreamBufferNotificationIndex
+                  0x0042d0                  _xTimerCreateTimerTask
+                  0x00432c                  _xTimerCreate
+                  0x00435e                  _xTimerCreateStatic
+                  0x00441a                  _xTimerGenericCommandFromTask
+                  0x004494                  _xTimerGenericCommandFromISR
+                  0x0044fa                  _xTimerGetTimerDaemonTaskHandle
+                  0x004518                  _xTimerGetPeriod
+                  0x00453e                  _vTimerSetReloadMode
+                  0x004586                  _xTimerGetReloadMode
+                  0x0045c4                  _uxTimerGetReloadMode
+                  0x0045d4                  _xTimerGetExpiryTime
+                  0x0045fe                  _xTimerGetStaticBuffer
+                  0x004640                  _pcTimerGetName
+                  0x0046dc                  build/default/production/timers.o:_prvTimerTask
+                  0x00498a                  _xTimerIsTimerActive
+                  0x0049c8                  _pvTimerGetTimerID
+                  0x0049f6                  _vTimerSetTimerID
+                  0x004a24                  _vTimerResetState
+                  0x004a2e                  _xEventGroupCreateStatic
+                  0x004a82                  _xEventGroupCreate
+                  0x004aa6                  _xEventGroupSync
+                  0x004bb8                  _xEventGroupWaitBits
+                  0x004d04                  _xEventGroupClearBits
+                  0x004d5c                  _xEventGroupGetBitsFromISR
+                  0x004d74                  _xEventGroupSetBits
+                  0x004e6e                  _vEventGroupDelete
+                  0x004ed2                  _xEventGroupGetStaticBuffer
+                  0x004f26                  _vEventGroupSetBitsCallback
+                  0x004f38                  _vEventGroupClearBitsCallback
+                  0x004f82                  _pxPortInitialiseStack
+                  0x005012                  _xPortStartScheduler
+                  0x005040                  _vPortEndScheduler
+                  0x005086                  _vPortEnterCritical
+                  0x0050a0                  _vPortExitCritical
+                  0x0050d2                  _vListInitialise
+                  0x005104                  _vListInitialiseItem
+                  0x005112                  _vListInsertEnd
+                  0x00514e                  _vListInsert
+                  0x0051b2                  _uxListRemove
+                  0x0051fa                  _pvPortMalloc
+                  0x005268                  _vPortFree
+                  0x005286                  _vPortInitialiseBlocks
+                  0x00528e                  _xPortGetFreeHeapSize
+                  0x00529a                  _vPortHeapResetState
+                  0x0052a2                  _vPortYield
+                  0x005320                  _config_user_app
+                  0x005328                  _task_1
+                  0x005342                  _main
 
 External Symbols in Program Memory (by name):
 
@@ -296,156 +296,156 @@ External Symbols in Program Memory (by name):
                   0x000252                  __data_init_standard
                   0x00023c                  __psv_init
                   0x000200                  __resetPRI
-                  0x004e9a                  _config_user_app
-                  0x004ebc                  _main
+                  0x005320                  _config_user_app
+                  0x005342                  _main
                   0x00030a                  _memcpy
                   0x000318                  _memset
-                  0x000fd8                  _pcTaskGetName
-                  0x004258                  _pcTimerGetName
-                  0x004d7a                  _pvPortMalloc
-                  0x001b18                  _pvTaskIncrementMutexHeldCount
-                  0x0045ce                  _pvTimerGetTimerID
-                  0x004b16                  _pxPortInitialiseStack
-                  0x004ea2                  _task_1
-                  0x001b34                  _ulTaskGenericNotifyTake
-                  0x0022ec                  _ulTaskGenericNotifyValueClear
-                  0x004d32                  _uxListRemove
-                  0x00310a                  _uxQueueGetQueueItemSize
-                  0x003116                  _uxQueueGetQueueLength
-                  0x00306c                  _uxQueueMessagesWaiting
-                  0x0030be                  _uxQueueMessagesWaitingFromISR
-                  0x003090                  _uxQueueSpacesAvailable
-                  0x003ec4                  _uxStreamBufferGetStreamBufferNotificationIndex
-                  0x0008f0                  _uxTaskBasePriorityGet
-                  0x000912                  _uxTaskBasePriorityGetFromISR
-                  0x000fd0                  _uxTaskGetNumberOfTasks
-                  0x0008ac                  _uxTaskPriorityGet
-                  0x0008ce                  _uxTaskPriorityGetFromISR
-                  0x001b00                  _uxTaskResetEventItemValue
-                  0x0041e8                  _uxTimerGetReloadMode
-                  0x0023f4                  _vApplicationGetIdleTaskMemory
-                  0x002412                  _vApplicationGetTimerTaskMemory
-                  0x004acc                  _vEventGroupClearBitsCallback
-                  0x004a1a                  _vEventGroupDelete
-                  0x004aba                  _vEventGroupSetBitsCallback
-                  0x004c52                  _vListInitialise
-                  0x004c84                  _vListInitialiseItem
-                  0x004cce                  _vListInsert
-                  0x004c92                  _vListInsertEnd
-                  0x004bd4                  _vPortEndScheduler
-                  0x004c14                  _vPortEnterCritical
-                  0x004c28                  _vPortExitCritical
-                  0x004de8                  _vPortFree
-                  0x004e14                  _vPortHeapResetState
-                  0x004e00                  _vPortInitialiseBlocks
-                  0x004e1c                  _vPortYield
-                  0x0030e2                  _vQueueDelete
-                  0x003362                  _vQueueWaitForMessageRestricted
-                  0x00358e                  _vStreamBufferDelete
-                  0x003ee4                  _vStreamBufferSetStreamBufferNotificationIndex
-                  0x000872                  _vTaskDelay
-                  0x000724                  _vTaskDelete
-                  0x000de6                  _vTaskEndScheduler
-                  0x002124                  _vTaskGenericNotifyGiveFromISR
-                  0x00165c                  _vTaskInternalSetTimeOutState
-                  0x001706                  _vTaskMissedYield
-                  0x0012ae                  _vTaskPlaceOnEventList
-                  0x001348                  _vTaskPlaceOnEventListRestricted
-                  0x0012d8                  _vTaskPlaceOnUnorderedEventList
-                  0x0019fa                  _vTaskPriorityDisinheritAfterTimeout
-                  0x000934                  _vTaskPrioritySet
-                  0x001508                  _vTaskRemoveFromUnorderedEventList
-                  0x002430                  _vTaskResetState
-                  0x000b78                  _vTaskResume
-                  0x001634                  _vTaskSetTimeOutState
-                  0x000da4                  _vTaskStartScheduler
-                  0x000a72                  _vTaskSuspend
-                  0x000e18                  _vTaskSuspendAll
-                  0x00123a                  _vTaskSwitchContext
-                  0x00461e                  _vTimerResetState
-                  0x00416e                  _vTimerSetReloadMode
-                  0x0045f6                  _vTimerSetTimerID
-                  0x0048c8                  _xEventGroupClearBits
-                  0x004670                  _xEventGroupCreate
-                  0x004628                  _xEventGroupCreateStatic
-                  0x004914                  _xEventGroupGetBitsFromISR
-                  0x004a72                  _xEventGroupGetStaticBuffer
-                  0x00492c                  _xEventGroupSetBits
-                  0x004694                  _xEventGroupSync
-                  0x004794                  _xEventGroupWaitBits
-                  0x004e08                  _xPortGetFreeHeapSize
-                  0x004ba6                  _xPortStartScheduler
-                  0x002838                  _xQueueCreateCountingSemaphore
-                  0x0027ec                  _xQueueCreateCountingSemaphoreStatic
-                  0x0026fe                  _xQueueCreateMutex
-                  0x00271e                  _xQueueCreateMutexStatic
-                  0x002620                  _xQueueGenericCreate
-                  0x00253c                  _xQueueGenericCreateStatic
-                  0x0025c6                  _xQueueGenericGetStaticBuffers
-                  0x002466                  _xQueueGenericReset
-                  0x00287e                  _xQueueGenericSend
-                  0x0029ce                  _xQueueGenericSendFromISR
-                  0x002aba                  _xQueueGiveFromISR
-                  0x002744                  _xQueueGiveMutexRecursive
-                  0x0032da                  _xQueueIsQueueEmptyFromISR
-                  0x00332e                  _xQueueIsQueueFullFromISR
-                  0x002e02                  _xQueuePeek
-                  0x002ff0                  _xQueuePeekFromISR
-                  0x002b8c                  _xQueueReceive
-                  0x002f2e                  _xQueueReceiveFromISR
-                  0x002cb4                  _xQueueSemaphoreTake
-                  0x002796                  _xQueueTakeMutexRecursive
-                  0x00371a                  _xStreamBufferBytesAvailable
-                  0x0033a8                  _xStreamBufferGenericCreate
-                  0x003454                  _xStreamBufferGenericCreateStatic
-                  0x003528                  _xStreamBufferGetStaticBuffers
-                  0x003bf6                  _xStreamBufferIsEmpty
-                  0x003c2e                  _xStreamBufferIsFull
-                  0x003a8a                  _xStreamBufferNextMessageLengthBytes
-                  0x003986                  _xStreamBufferReceive
-                  0x003cc6                  _xStreamBufferReceiveCompletedFromISR
-                  0x003af2                  _xStreamBufferReceiveFromISR
-                  0x0035c4                  _xStreamBufferReset
-                  0x003626                  _xStreamBufferResetFromISR
-                  0x00373e                  _xStreamBufferSend
-                  0x003c78                  _xStreamBufferSendCompletedFromISR
-                  0x003878                  _xStreamBufferSendFromISR
-                  0x003688                  _xStreamBufferSetTriggerLevel
-                  0x0036cc                  _xStreamBufferSpacesAvailable
-                  0x00107a                  _xTaskCatchUpTicks
-                  0x001670                  _xTaskCheckForTimeOut
-                  0x000548                  _xTaskCreate
-                  0x0004ac                  _xTaskCreateStatic
-                  0x0007c4                  _xTaskDelayUntil
-                  0x001d14                  _xTaskGenericNotify
-                  0x001efa                  _xTaskGenericNotifyFromISR
-                  0x00229c                  _xTaskGenericNotifyStateClear
-                  0x001bfc                  _xTaskGenericNotifyWait
-                  0x0017e8                  _xTaskGetCurrentTaskHandle
-                  0x0017f4                  _xTaskGetCurrentTaskHandleForCore
-                  0x00180c                  _xTaskGetSchedulerState
-                  0x001002                  _xTaskGetStaticBuffers
-                  0x000fb4                  _xTaskGetTickCount
-                  0x000fc0                  _xTaskGetTickCountFromISR
-                  0x0010a6                  _xTaskIncrementTick
-                  0x001916                  _xTaskPriorityDisinherit
-                  0x001830                  _xTaskPriorityInherit
-                  0x0013aa                  _xTaskRemoveFromEventList
-                  0x000e24                  _xTaskResumeAll
-                  0x000c2e                  _xTaskResumeFromISR
-                  0x003f92                  _xTimerCreate
-                  0x003fc4                  _xTimerCreateStatic
-                  0x003f3c                  _xTimerCreateTimerTask
-                  0x0040dc                  _xTimerGenericCommandFromISR
-                  0x00406e                  _xTimerGenericCommandFromTask
-                  0x0041f8                  _xTimerGetExpiryTime
-                  0x00414e                  _xTimerGetPeriod
-                  0x0041b0                  _xTimerGetReloadMode
-                  0x00421c                  _xTimerGetStaticBuffer
-                  0x004136                  _xTimerGetTimerDaemonTaskHandle
-                  0x004596                  _xTimerIsTimerActive
-                  0x001710                  build/default/production/tasks.o:_prvIdleTask
-                  0x0042ee                  build/default/production/timers.o:_prvTimerTask
+                  0x00104a                  _pcTaskGetName
+                  0x004640                  _pcTimerGetName
+                  0x0051fa                  _pvPortMalloc
+                  0x001c1e                  _pvTaskIncrementMutexHeldCount
+                  0x0049c8                  _pvTimerGetTimerID
+                  0x004f82                  _pxPortInitialiseStack
+                  0x005328                  _task_1
+                  0x001c3a                  _ulTaskGenericNotifyTake
+                  0x002446                  _ulTaskGenericNotifyValueClear
+                  0x0051b2                  _uxListRemove
+                  0x00336c                  _uxQueueGetQueueItemSize
+                  0x003378                  _uxQueueGetQueueLength
+                  0x0032b6                  _uxQueueMessagesWaiting
+                  0x003314                  _uxQueueMessagesWaitingFromISR
+                  0x0032e0                  _uxQueueSpacesAvailable
+                  0x00423a                  _uxStreamBufferGetStreamBufferNotificationIndex
+                  0x00092c                  _uxTaskBasePriorityGet
+                  0x00094e                  _uxTaskBasePriorityGetFromISR
+                  0x001042                  _uxTaskGetNumberOfTasks
+                  0x0008e8                  _uxTaskPriorityGet
+                  0x00090a                  _uxTaskPriorityGetFromISR
+                  0x001c06                  _uxTaskResetEventItemValue
+                  0x0045c4                  _uxTimerGetReloadMode
+                  0x002554                  _vApplicationGetIdleTaskMemory
+                  0x002572                  _vApplicationGetTimerTaskMemory
+                  0x004f38                  _vEventGroupClearBitsCallback
+                  0x004e6e                  _vEventGroupDelete
+                  0x004f26                  _vEventGroupSetBitsCallback
+                  0x0050d2                  _vListInitialise
+                  0x005104                  _vListInitialiseItem
+                  0x00514e                  _vListInsert
+                  0x005112                  _vListInsertEnd
+                  0x005040                  _vPortEndScheduler
+                  0x005086                  _vPortEnterCritical
+                  0x0050a0                  _vPortExitCritical
+                  0x005268                  _vPortFree
+                  0x00529a                  _vPortHeapResetState
+                  0x005286                  _vPortInitialiseBlocks
+                  0x0052a2                  _vPortYield
+                  0x00333e                  _vQueueDelete
+                  0x0035d0                  _vQueueWaitForMessageRestricted
+                  0x00384a                  _vStreamBufferDelete
+                  0x004260                  _vStreamBufferSetStreamBufferNotificationIndex
+                  0x0008a8                  _vTaskDelay
+                  0x000742                  _vTaskDelete
+                  0x000e4c                  _vTaskEndScheduler
+                  0x002266                  _vTaskGenericNotifyGiveFromISR
+                  0x001738                  _vTaskInternalSetTimeOutState
+                  0x0017ee                  _vTaskMissedYield
+                  0x00135a                  _vTaskPlaceOnEventList
+                  0x001406                  _vTaskPlaceOnEventListRestricted
+                  0x00138a                  _vTaskPlaceOnUnorderedEventList
+                  0x001af4                  _vTaskPriorityDisinheritAfterTimeout
+                  0x000970                  _vTaskPrioritySet
+                  0x0015d2                  _vTaskRemoveFromUnorderedEventList
+                  0x002590                  _vTaskResetState
+                  0x000bc6                  _vTaskResume
+                  0x00170a                  _vTaskSetTimeOutState
+                  0x000dfe                  _vTaskStartScheduler
+                  0x000ab4                  _vTaskSuspend
+                  0x000e84                  _vTaskSuspendAll
+                  0x0012e0                  _vTaskSwitchContext
+                  0x004a24                  _vTimerResetState
+                  0x00453e                  _vTimerSetReloadMode
+                  0x0049f6                  _vTimerSetTimerID
+                  0x004d04                  _xEventGroupClearBits
+                  0x004a82                  _xEventGroupCreate
+                  0x004a2e                  _xEventGroupCreateStatic
+                  0x004d5c                  _xEventGroupGetBitsFromISR
+                  0x004ed2                  _xEventGroupGetStaticBuffer
+                  0x004d74                  _xEventGroupSetBits
+                  0x004aa6                  _xEventGroupSync
+                  0x004bb8                  _xEventGroupWaitBits
+                  0x00528e                  _xPortGetFreeHeapSize
+                  0x005012                  _xPortStartScheduler
+                  0x0029da                  _xQueueCreateCountingSemaphore
+                  0x002988                  _xQueueCreateCountingSemaphoreStatic
+                  0x00288e                  _xQueueCreateMutex
+                  0x0028ae                  _xQueueCreateMutexStatic
+                  0x0027aa                  _xQueueGenericCreate
+                  0x0026a8                  _xQueueGenericCreateStatic
+                  0x002744                  _xQueueGenericGetStaticBuffers
+                  0x0025c6                  _xQueueGenericReset
+                  0x002a26                  _xQueueGenericSend
+                  0x002b8e                  _xQueueGenericSendFromISR
+                  0x002c92                  _xQueueGiveFromISR
+                  0x0028d4                  _xQueueGiveMutexRecursive
+                  0x00353c                  _xQueueIsQueueEmptyFromISR
+                  0x003596                  _xQueueIsQueueFullFromISR
+                  0x003016                  _xQueuePeek
+                  0x003228                  _xQueuePeekFromISR
+                  0x002d7c                  _xQueueReceive
+                  0x003154                  _xQueueReceiveFromISR
+                  0x002eb6                  _xQueueSemaphoreTake
+                  0x00292c                  _xQueueTakeMutexRecursive
+                  0x0039f4                  _xStreamBufferBytesAvailable
+                  0x003616                  _xStreamBufferGenericCreate
+                  0x0036da                  _xStreamBufferGenericCreateStatic
+                  0x0037d2                  _xStreamBufferGetStaticBuffers
+                  0x003f2a                  _xStreamBufferIsEmpty
+                  0x003f68                  _xStreamBufferIsFull
+                  0x003da6                  _xStreamBufferNextMessageLengthBytes
+                  0x003c90                  _xStreamBufferReceive
+                  0x00400c                  _xStreamBufferReceiveCompletedFromISR
+                  0x003e1a                  _xStreamBufferReceiveFromISR
+                  0x003886                  _xStreamBufferReset
+                  0x0038ee                  _xStreamBufferResetFromISR
+                  0x003a1e                  _xStreamBufferSend
+                  0x003fb8                  _xStreamBufferSendCompletedFromISR
+                  0x003b70                  _xStreamBufferSendFromISR
+                  0x003956                  _xStreamBufferSetTriggerLevel
+                  0x0039a0                  _xStreamBufferSpacesAvailable
+                  0x0010fe                  _xTaskCatchUpTicks
+                  0x00174c                  _xTaskCheckForTimeOut
+                  0x00055a                  _xTaskCreate
+                  0x0004be                  _xTaskCreateStatic
+                  0x0007e8                  _xTaskDelayUntil
+                  0x001e26                  _xTaskGenericNotify
+                  0x002024                  _xTaskGenericNotifyFromISR
+                  0x0023f0                  _xTaskGenericNotifyStateClear
+                  0x001d08                  _xTaskGenericNotifyWait
+                  0x0018d6                  _xTaskGetCurrentTaskHandle
+                  0x0018e2                  _xTaskGetCurrentTaskHandleForCore
+                  0x0018fa                  _xTaskGetSchedulerState
+                  0x00107a                  _xTaskGetStaticBuffers
+                  0x001026                  _xTaskGetTickCount
+                  0x001032                  _xTaskGetTickCountFromISR
+                  0x001130                  _xTaskIncrementTick
+                  0x001a04                  _xTaskPriorityDisinherit
+                  0x00191e                  _xTaskPriorityInherit
+                  0x00146e                  _xTaskRemoveFromEventList
+                  0x000e90                  _xTaskResumeAll
+                  0x000c82                  _xTaskResumeFromISR
+                  0x00432c                  _xTimerCreate
+                  0x00435e                  _xTimerCreateStatic
+                  0x0042d0                  _xTimerCreateTimerTask
+                  0x004494                  _xTimerGenericCommandFromISR
+                  0x00441a                  _xTimerGenericCommandFromTask
+                  0x0045d4                  _xTimerGetExpiryTime
+                  0x004518                  _xTimerGetPeriod
+                  0x004586                  _xTimerGetReloadMode
+                  0x0045fe                  _xTimerGetStaticBuffer
+                  0x0044fa                  _xTimerGetTimerDaemonTaskHandle
+                  0x00498a                  _xTimerIsTimerActive
+                  0x0017f8                  build/default/production/tasks.o:_prvIdleTask
+                  0x0046dc                  build/default/production/timers.o:_prvTimerTask
 
 Memory Configuration
 
@@ -538,54 +538,54 @@ __CONFIG1
 .comment
  *(.comment)
 
-.debug_info       0x000000       0x965d
+.debug_info       0x000000       0x9e70
  *(.debug_info)
  .debug_info      0x000000        0x187 build/default/production/croutine.o
- .debug_info      0x000187        0xbb7 build/default/production/event_groups.o
- .debug_info      0x000d3e        0x47d build/default/production/list.o
- .debug_info      0x0011bb        0xa13 build/default/production/port.o
- .debug_info      0x001bce       0x18c6 build/default/production/queue.o
- .debug_info      0x003494       0x13eb build/default/production/stream_buffer.o
- .debug_info      0x00487f       0x2b9c build/default/production/tasks.o
- .debug_info      0x00741b       0x162e build/default/production/timers.o
- .debug_info      0x008a49        0x19a build/default/production/main.o
- .debug_info      0x008be3        0x63d build/default/production/user_app.o
- .debug_info      0x009220         0xc2 build/default/production/portasm_PIC24.o
- .debug_info      0x0092e2        0x2ef build/default/production/heap_1.o
- .debug_info      0x0095d1         0x8c c:/program files/microchip/xc16/v2.10/bin/bin/../../lib\libc99-pic30-elf.a(mulsi3.XX_o)
+ .debug_info      0x000187        0xcd2 build/default/production/event_groups.o
+ .debug_info      0x000e59        0x47d build/default/production/list.o
+ .debug_info      0x0012d6        0xb2a build/default/production/port.o
+ .debug_info      0x001e00       0x19e1 build/default/production/queue.o
+ .debug_info      0x0037e1       0x1506 build/default/production/stream_buffer.o
+ .debug_info      0x004ce7       0x2cb3 build/default/production/tasks.o
+ .debug_info      0x00799a       0x1745 build/default/production/timers.o
+ .debug_info      0x0090df        0x1cd build/default/production/main.o
+ .debug_info      0x0092ac        0x660 build/default/production/user_app.o
+ .debug_info      0x00990c         0xc2 build/default/production/portasm_PIC24.o
+ .debug_info      0x0099ce        0x416 build/default/production/heap_1.o
+ .debug_info      0x009de4         0x8c c:/program files/microchip/xc16/v2.10/bin/bin/../../lib\libc99-pic30-elf.a(mulsi3.XX_o)
  *(.gnu.linkonce.wi.*)
 
-.debug_abbrev     0x000000        0xda5
+.debug_abbrev     0x000000        0xf9c
  *(.debug_abbrev)
  .debug_abbrev    0x000000         0x1f build/default/production/croutine.o
- .debug_abbrev    0x00001f        0x1a2 build/default/production/event_groups.o
- .debug_abbrev    0x0001c1         0xda build/default/production/list.o
- .debug_abbrev    0x00029b        0x1c9 build/default/production/port.o
- .debug_abbrev    0x000464        0x1e0 build/default/production/queue.o
- .debug_abbrev    0x000644        0x19e build/default/production/stream_buffer.o
- .debug_abbrev    0x0007e2        0x1f6 build/default/production/tasks.o
- .debug_abbrev    0x0009d8        0x221 build/default/production/timers.o
- .debug_abbrev    0x000bf9         0x34 build/default/production/main.o
- .debug_abbrev    0x000c2d         0x88 build/default/production/user_app.o
- .debug_abbrev    0x000cb5         0x14 build/default/production/portasm_PIC24.o
- .debug_abbrev    0x000cc9         0xc8 build/default/production/heap_1.o
- .debug_abbrev    0x000d91         0x14 c:/program files/microchip/xc16/v2.10/bin/bin/../../lib\libc99-pic30-elf.a(mulsi3.XX_o)
+ .debug_abbrev    0x00001f        0x1f4 build/default/production/event_groups.o
+ .debug_abbrev    0x000213         0xda build/default/production/list.o
+ .debug_abbrev    0x0002ed        0x1e3 build/default/production/port.o
+ .debug_abbrev    0x0004d0        0x20e build/default/production/queue.o
+ .debug_abbrev    0x0006de        0x1d9 build/default/production/stream_buffer.o
+ .debug_abbrev    0x0008b7        0x246 build/default/production/tasks.o
+ .debug_abbrev    0x000afd        0x264 build/default/production/timers.o
+ .debug_abbrev    0x000d61         0x5d build/default/production/main.o
+ .debug_abbrev    0x000dbe         0x88 build/default/production/user_app.o
+ .debug_abbrev    0x000e46         0x14 build/default/production/portasm_PIC24.o
+ .debug_abbrev    0x000e5a        0x12e build/default/production/heap_1.o
+ .debug_abbrev    0x000f88         0x14 c:/program files/microchip/xc16/v2.10/bin/bin/../../lib\libc99-pic30-elf.a(mulsi3.XX_o)
 
-.debug_line       0x000000       0x1490
+.debug_line       0x000000       0x1830
  *(.debug_line)
  .debug_line      0x000000         0x1a build/default/production/croutine.o
- .debug_line      0x00001a        0x1a1 build/default/production/event_groups.o
- .debug_line      0x0001bb         0xcc build/default/production/list.o
- .debug_line      0x000287        0x171 build/default/production/port.o
- .debug_line      0x0003f8        0x3ab build/default/production/queue.o
- .debug_line      0x0007a3        0x27f build/default/production/stream_buffer.o
- .debug_line      0x000a22        0x5bd build/default/production/tasks.o
- .debug_line      0x000fdf        0x22d build/default/production/timers.o
- .debug_line      0x00120c         0x35 build/default/production/main.o
- .debug_line      0x001241        0x10c build/default/production/user_app.o
- .debug_line      0x00134d         0x62 build/default/production/portasm_PIC24.o
- .debug_line      0x0013af         0xa7 build/default/production/heap_1.o
- .debug_line      0x001456         0x3a c:/program files/microchip/xc16/v2.10/bin/bin/../../lib\libc99-pic30-elf.a(mulsi3.XX_o)
+ .debug_line      0x00001a        0x22f build/default/production/event_groups.o
+ .debug_line      0x000249         0xcc build/default/production/list.o
+ .debug_line      0x000315        0x172 build/default/production/port.o
+ .debug_line      0x000487        0x44f build/default/production/queue.o
+ .debug_line      0x0008d6        0x325 build/default/production/stream_buffer.o
+ .debug_line      0x000bfb        0x66d build/default/production/tasks.o
+ .debug_line      0x001268        0x2c1 build/default/production/timers.o
+ .debug_line      0x001529         0x35 build/default/production/main.o
+ .debug_line      0x00155e        0x10c build/default/production/user_app.o
+ .debug_line      0x00166a         0x62 build/default/production/portasm_PIC24.o
+ .debug_line      0x0016cc        0x12a build/default/production/heap_1.o
+ .debug_line      0x0017f6         0x3a c:/program files/microchip/xc16/v2.10/bin/bin/../../lib\libc99-pic30-elf.a(mulsi3.XX_o)
 
 .debug_frame      0x000000       0x13e0
  *(.debug_frame)
@@ -1253,64 +1253,64 @@ LOAD default_isr
 LOAD data_init
 
 .debug_pubtypes
-                  0x000130        0xb97
+                  0x000130        0xc53
  .debug_pubtypes
                   0x000130         0x12 build/default/production/croutine.o
  .debug_pubtypes
-                  0x000142        0x19c build/default/production/event_groups.o
+                  0x000142        0x1b5 build/default/production/event_groups.o
  .debug_pubtypes
-                  0x0002de         0x98 build/default/production/list.o
+                  0x0002f7         0x98 build/default/production/list.o
  .debug_pubtypes
-                  0x000376         0xf0 build/default/production/port.o
+                  0x00038f        0x109 build/default/production/port.o
  .debug_pubtypes
-                  0x000466        0x1f9 build/default/production/queue.o
+                  0x000498        0x212 build/default/production/queue.o
  .debug_pubtypes
-                  0x00065f        0x136 build/default/production/stream_buffer.o
+                  0x0006aa        0x14f build/default/production/stream_buffer.o
  .debug_pubtypes
-                  0x000795        0x1cc build/default/production/tasks.o
+                  0x0007f9        0x1e5 build/default/production/tasks.o
  .debug_pubtypes
-                  0x000961        0x2b1 build/default/production/timers.o
+                  0x0009de        0x2ca build/default/production/timers.o
  .debug_pubtypes
-                  0x000c12         0x12 build/default/production/main.o
+                  0x000ca8         0x12 build/default/production/main.o
  .debug_pubtypes
-                  0x000c24         0x7a build/default/production/user_app.o
+                  0x000cba         0x7a build/default/production/user_app.o
  .debug_pubtypes
-                  0x000c9e         0x29 build/default/production/heap_1.o
+                  0x000d34         0x4f build/default/production/heap_1.o
 
 __c30_signature
-                  0x000cc7         0x60
+                  0x000d83         0x60
  __c30_signature
-                  0x000cc7          0x6 build/default/production/croutine.o
+                  0x000d83          0x6 build/default/production/croutine.o
  __c30_signature
-                  0x000ccd          0x6 build/default/production/event_groups.o
+                  0x000d89          0x6 build/default/production/event_groups.o
  __c30_signature
-                  0x000cd3          0x6 build/default/production/list.o
+                  0x000d8f          0x6 build/default/production/list.o
  __c30_signature
-                  0x000cd9          0x6 build/default/production/port.o
+                  0x000d95          0x6 build/default/production/port.o
  __c30_signature
-                  0x000cdf          0x6 build/default/production/queue.o
+                  0x000d9b          0x6 build/default/production/queue.o
  __c30_signature
-                  0x000ce5          0x6 build/default/production/stream_buffer.o
+                  0x000da1          0x6 build/default/production/stream_buffer.o
  __c30_signature
-                  0x000ceb          0x6 build/default/production/tasks.o
+                  0x000da7          0x6 build/default/production/tasks.o
  __c30_signature
-                  0x000cf1          0x6 build/default/production/timers.o
+                  0x000dad          0x6 build/default/production/timers.o
  __c30_signature
-                  0x000cf7          0x6 build/default/production/main.o
+                  0x000db3          0x6 build/default/production/main.o
  __c30_signature
-                  0x000cfd          0x6 build/default/production/user_app.o
+                  0x000db9          0x6 build/default/production/user_app.o
  __c30_signature
-                  0x000d03          0x6 build/default/production/heap_1.o
+                  0x000dbf          0x6 build/default/production/heap_1.o
  __c30_signature
-                  0x000d09          0x6 c:/program files/microchip/xc16/v2.10/bin/bin/../../lib\libc99-pic30-elf.a(crt0_standard.o)
+                  0x000dc5          0x6 c:/program files/microchip/xc16/v2.10/bin/bin/../../lib\libc99-pic30-elf.a(crt0_standard.o)
  __c30_signature
-                  0x000d0f          0x6 c:/program files/microchip/xc16/v2.10/bin/bin/../../lib\libc99-pic30-elf.a(data_init_standard.o)
+                  0x000dcb          0x6 c:/program files/microchip/xc16/v2.10/bin/bin/../../lib\libc99-pic30-elf.a(data_init_standard.o)
  __c30_signature
-                  0x000d15          0x6 c:/program files/microchip/xc16/v2.10/bin/bin/../../lib\libc99-elf.a(memcpy.XX_o)
+                  0x000dd1          0x6 c:/program files/microchip/xc16/v2.10/bin/bin/../../lib\libc99-elf.a(memcpy.XX_o)
  __c30_signature
-                  0x000d1b          0x6 c:/program files/microchip/xc16/v2.10/bin/bin/../../lib\libc99-elf.a(memset.XX_o)
+                  0x000dd7          0x6 c:/program files/microchip/xc16/v2.10/bin/bin/../../lib\libc99-elf.a(memset.XX_o)
  __c30_signature
-                  0x000d21          0x6 c:/program files/microchip/xc16/v2.10/bin/bin/../../lib\libc99-pic30-elf.a(mulsi3.XX_o)
+                  0x000ddd          0x6 c:/program files/microchip/xc16/v2.10/bin/bin/../../lib\libc99-pic30-elf.a(mulsi3.XX_o)
 
 .nbss               0x0800         0x2c
  .nbss              0x0800         0x1e build/default/production/tasks.o
@@ -1338,169 +1338,169 @@ __c30_signature
  .const             0x8414          0x8 build/default/production/timers.o
  .const             0x841c          0x4 build/default/production/main.o
 
-.text             0x000420       0x4a4c
- .text            0x000420       0x2046 build/default/production/tasks.o
-                  0x0004ac                  _xTaskCreateStatic
-                  0x000548                  _xTaskCreate
-                  0x000724                  _vTaskDelete
-                  0x0007c4                  _xTaskDelayUntil
-                  0x000872                  _vTaskDelay
-                  0x0008ac                  _uxTaskPriorityGet
-                  0x0008ce                  _uxTaskPriorityGetFromISR
-                  0x0008f0                  _uxTaskBasePriorityGet
-                  0x000912                  _uxTaskBasePriorityGetFromISR
-                  0x000934                  _vTaskPrioritySet
-                  0x000a72                  _vTaskSuspend
-                  0x000b78                  _vTaskResume
-                  0x000c2e                  _xTaskResumeFromISR
-                  0x000da4                  _vTaskStartScheduler
-                  0x000de6                  _vTaskEndScheduler
-                  0x000e18                  _vTaskSuspendAll
-                  0x000e24                  _xTaskResumeAll
-                  0x000fb4                  _xTaskGetTickCount
-                  0x000fc0                  _xTaskGetTickCountFromISR
-                  0x000fd0                  _uxTaskGetNumberOfTasks
-                  0x000fd8                  _pcTaskGetName
-                  0x001002                  _xTaskGetStaticBuffers
-                  0x00107a                  _xTaskCatchUpTicks
-                  0x0010a6                  _xTaskIncrementTick
-                  0x00123a                  _vTaskSwitchContext
-                  0x0012ae                  _vTaskPlaceOnEventList
-                  0x0012d8                  _vTaskPlaceOnUnorderedEventList
-                  0x001348                  _vTaskPlaceOnEventListRestricted
-                  0x0013aa                  _xTaskRemoveFromEventList
-                  0x001508                  _vTaskRemoveFromUnorderedEventList
-                  0x001634                  _vTaskSetTimeOutState
-                  0x00165c                  _vTaskInternalSetTimeOutState
-                  0x001670                  _xTaskCheckForTimeOut
-                  0x001706                  _vTaskMissedYield
-                  0x001710                  build/default/production/tasks.o:_prvIdleTask
-                  0x0017e8                  _xTaskGetCurrentTaskHandle
-                  0x0017f4                  _xTaskGetCurrentTaskHandleForCore
-                  0x00180c                  _xTaskGetSchedulerState
-                  0x001830                  _xTaskPriorityInherit
-                  0x001916                  _xTaskPriorityDisinherit
-                  0x0019fa                  _vTaskPriorityDisinheritAfterTimeout
-                  0x001b00                  _uxTaskResetEventItemValue
-                  0x001b18                  _pvTaskIncrementMutexHeldCount
-                  0x001b34                  _ulTaskGenericNotifyTake
-                  0x001bfc                  _xTaskGenericNotifyWait
-                  0x001d14                  _xTaskGenericNotify
-                  0x001efa                  _xTaskGenericNotifyFromISR
-                  0x002124                  _vTaskGenericNotifyGiveFromISR
-                  0x00229c                  _xTaskGenericNotifyStateClear
-                  0x0022ec                  _ulTaskGenericNotifyValueClear
-                  0x0023f4                  _vApplicationGetIdleTaskMemory
-                  0x002412                  _vApplicationGetTimerTaskMemory
-                  0x002430                  _vTaskResetState
- .text            0x002466        0xf42 build/default/production/queue.o
-                  0x002466                  _xQueueGenericReset
-                  0x00253c                  _xQueueGenericCreateStatic
-                  0x0025c6                  _xQueueGenericGetStaticBuffers
-                  0x002620                  _xQueueGenericCreate
-                  0x0026fe                  _xQueueCreateMutex
-                  0x00271e                  _xQueueCreateMutexStatic
-                  0x002744                  _xQueueGiveMutexRecursive
-                  0x002796                  _xQueueTakeMutexRecursive
-                  0x0027ec                  _xQueueCreateCountingSemaphoreStatic
-                  0x002838                  _xQueueCreateCountingSemaphore
-                  0x00287e                  _xQueueGenericSend
-                  0x0029ce                  _xQueueGenericSendFromISR
-                  0x002aba                  _xQueueGiveFromISR
-                  0x002b8c                  _xQueueReceive
-                  0x002cb4                  _xQueueSemaphoreTake
-                  0x002e02                  _xQueuePeek
-                  0x002f2e                  _xQueueReceiveFromISR
-                  0x002ff0                  _xQueuePeekFromISR
-                  0x00306c                  _uxQueueMessagesWaiting
-                  0x003090                  _uxQueueSpacesAvailable
-                  0x0030be                  _uxQueueMessagesWaitingFromISR
-                  0x0030e2                  _vQueueDelete
-                  0x00310a                  _uxQueueGetQueueItemSize
-                  0x003116                  _uxQueueGetQueueLength
-                  0x0032da                  _xQueueIsQueueEmptyFromISR
-                  0x00332e                  _xQueueIsQueueFullFromISR
-                  0x003362                  _vQueueWaitForMessageRestricted
- .text            0x0033a8        0xb94 build/default/production/stream_buffer.o
-                  0x0033a8                  _xStreamBufferGenericCreate
-                  0x003454                  _xStreamBufferGenericCreateStatic
-                  0x003528                  _xStreamBufferGetStaticBuffers
-                  0x00358e                  _vStreamBufferDelete
-                  0x0035c4                  _xStreamBufferReset
-                  0x003626                  _xStreamBufferResetFromISR
-                  0x003688                  _xStreamBufferSetTriggerLevel
-                  0x0036cc                  _xStreamBufferSpacesAvailable
-                  0x00371a                  _xStreamBufferBytesAvailable
-                  0x00373e                  _xStreamBufferSend
-                  0x003878                  _xStreamBufferSendFromISR
-                  0x003986                  _xStreamBufferReceive
-                  0x003a8a                  _xStreamBufferNextMessageLengthBytes
-                  0x003af2                  _xStreamBufferReceiveFromISR
-                  0x003bf6                  _xStreamBufferIsEmpty
-                  0x003c2e                  _xStreamBufferIsFull
-                  0x003c78                  _xStreamBufferSendCompletedFromISR
-                  0x003cc6                  _xStreamBufferReceiveCompletedFromISR
-                  0x003ec4                  _uxStreamBufferGetStreamBufferNotificationIndex
-                  0x003ee4                  _vStreamBufferSetStreamBufferNotificationIndex
- .text            0x003f3c        0x6ec build/default/production/timers.o
-                  0x003f3c                  _xTimerCreateTimerTask
-                  0x003f92                  _xTimerCreate
-                  0x003fc4                  _xTimerCreateStatic
-                  0x00406e                  _xTimerGenericCommandFromTask
-                  0x0040dc                  _xTimerGenericCommandFromISR
-                  0x004136                  _xTimerGetTimerDaemonTaskHandle
-                  0x00414e                  _xTimerGetPeriod
-                  0x00416e                  _vTimerSetReloadMode
-                  0x0041b0                  _xTimerGetReloadMode
-                  0x0041e8                  _uxTimerGetReloadMode
-                  0x0041f8                  _xTimerGetExpiryTime
-                  0x00421c                  _xTimerGetStaticBuffer
-                  0x004258                  _pcTimerGetName
-                  0x0042ee                  build/default/production/timers.o:_prvTimerTask
-                  0x004596                  _xTimerIsTimerActive
-                  0x0045ce                  _pvTimerGetTimerID
-                  0x0045f6                  _vTimerSetTimerID
-                  0x00461e                  _vTimerResetState
- .text            0x004628        0x4ee build/default/production/event_groups.o
-                  0x004628                  _xEventGroupCreateStatic
-                  0x004670                  _xEventGroupCreate
-                  0x004694                  _xEventGroupSync
-                  0x004794                  _xEventGroupWaitBits
-                  0x0048c8                  _xEventGroupClearBits
-                  0x004914                  _xEventGroupGetBitsFromISR
-                  0x00492c                  _xEventGroupSetBits
-                  0x004a1a                  _vEventGroupDelete
-                  0x004a72                  _xEventGroupGetStaticBuffer
-                  0x004aba                  _vEventGroupSetBitsCallback
-                  0x004acc                  _vEventGroupClearBitsCallback
- .text            0x004b16        0x13c build/default/production/port.o
-                  0x004b16                  _pxPortInitialiseStack
-                  0x004ba6                  _xPortStartScheduler
-                  0x004bd4                  _vPortEndScheduler
-                  0x004bec                  _vApplicationSetupTickTimerInterrupt
-                  0x004c14                  _vPortEnterCritical
-                  0x004c28                  _vPortExitCritical
- .text            0x004c52        0x128 build/default/production/list.o
-                  0x004c52                  _vListInitialise
-                  0x004c84                  _vListInitialiseItem
-                  0x004c92                  _vListInsertEnd
-                  0x004cce                  _vListInsert
-                  0x004d32                  _uxListRemove
- .text            0x004d7a         0xa2 build/default/production/heap_1.o
-                  0x004d7a                  _pvPortMalloc
-                  0x004de8                  _vPortFree
-                  0x004e00                  _vPortInitialiseBlocks
-                  0x004e08                  _xPortGetFreeHeapSize
-                  0x004e14                  _vPortHeapResetState
- .text            0x004e1c         0x50 build/default/production/portasm_PIC24.o
-                  0x004e1c                  _vPortYield
+.text             0x000420       0x4ed2
+ .text            0x000420       0x21a6 build/default/production/tasks.o
+                  0x0004be                  _xTaskCreateStatic
+                  0x00055a                  _xTaskCreate
+                  0x000742                  _vTaskDelete
+                  0x0007e8                  _xTaskDelayUntil
+                  0x0008a8                  _vTaskDelay
+                  0x0008e8                  _uxTaskPriorityGet
+                  0x00090a                  _uxTaskPriorityGetFromISR
+                  0x00092c                  _uxTaskBasePriorityGet
+                  0x00094e                  _uxTaskBasePriorityGetFromISR
+                  0x000970                  _vTaskPrioritySet
+                  0x000ab4                  _vTaskSuspend
+                  0x000bc6                  _vTaskResume
+                  0x000c82                  _xTaskResumeFromISR
+                  0x000dfe                  _vTaskStartScheduler
+                  0x000e4c                  _vTaskEndScheduler
+                  0x000e84                  _vTaskSuspendAll
+                  0x000e90                  _xTaskResumeAll
+                  0x001026                  _xTaskGetTickCount
+                  0x001032                  _xTaskGetTickCountFromISR
+                  0x001042                  _uxTaskGetNumberOfTasks
+                  0x00104a                  _pcTaskGetName
+                  0x00107a                  _xTaskGetStaticBuffers
+                  0x0010fe                  _xTaskCatchUpTicks
+                  0x001130                  _xTaskIncrementTick
+                  0x0012e0                  _vTaskSwitchContext
+                  0x00135a                  _vTaskPlaceOnEventList
+                  0x00138a                  _vTaskPlaceOnUnorderedEventList
+                  0x001406                  _vTaskPlaceOnEventListRestricted
+                  0x00146e                  _xTaskRemoveFromEventList
+                  0x0015d2                  _vTaskRemoveFromUnorderedEventList
+                  0x00170a                  _vTaskSetTimeOutState
+                  0x001738                  _vTaskInternalSetTimeOutState
+                  0x00174c                  _xTaskCheckForTimeOut
+                  0x0017ee                  _vTaskMissedYield
+                  0x0017f8                  build/default/production/tasks.o:_prvIdleTask
+                  0x0018d6                  _xTaskGetCurrentTaskHandle
+                  0x0018e2                  _xTaskGetCurrentTaskHandleForCore
+                  0x0018fa                  _xTaskGetSchedulerState
+                  0x00191e                  _xTaskPriorityInherit
+                  0x001a04                  _xTaskPriorityDisinherit
+                  0x001af4                  _vTaskPriorityDisinheritAfterTimeout
+                  0x001c06                  _uxTaskResetEventItemValue
+                  0x001c1e                  _pvTaskIncrementMutexHeldCount
+                  0x001c3a                  _ulTaskGenericNotifyTake
+                  0x001d08                  _xTaskGenericNotifyWait
+                  0x001e26                  _xTaskGenericNotify
+                  0x002024                  _xTaskGenericNotifyFromISR
+                  0x002266                  _vTaskGenericNotifyGiveFromISR
+                  0x0023f0                  _xTaskGenericNotifyStateClear
+                  0x002446                  _ulTaskGenericNotifyValueClear
+                  0x002554                  _vApplicationGetIdleTaskMemory
+                  0x002572                  _vApplicationGetTimerTaskMemory
+                  0x002590                  _vTaskResetState
+ .text            0x0025c6       0x1050 build/default/production/queue.o
+                  0x0025c6                  _xQueueGenericReset
+                  0x0026a8                  _xQueueGenericCreateStatic
+                  0x002744                  _xQueueGenericGetStaticBuffers
+                  0x0027aa                  _xQueueGenericCreate
+                  0x00288e                  _xQueueCreateMutex
+                  0x0028ae                  _xQueueCreateMutexStatic
+                  0x0028d4                  _xQueueGiveMutexRecursive
+                  0x00292c                  _xQueueTakeMutexRecursive
+                  0x002988                  _xQueueCreateCountingSemaphoreStatic
+                  0x0029da                  _xQueueCreateCountingSemaphore
+                  0x002a26                  _xQueueGenericSend
+                  0x002b8e                  _xQueueGenericSendFromISR
+                  0x002c92                  _xQueueGiveFromISR
+                  0x002d7c                  _xQueueReceive
+                  0x002eb6                  _xQueueSemaphoreTake
+                  0x003016                  _xQueuePeek
+                  0x003154                  _xQueueReceiveFromISR
+                  0x003228                  _xQueuePeekFromISR
+                  0x0032b6                  _uxQueueMessagesWaiting
+                  0x0032e0                  _uxQueueSpacesAvailable
+                  0x003314                  _uxQueueMessagesWaitingFromISR
+                  0x00333e                  _vQueueDelete
+                  0x00336c                  _uxQueueGetQueueItemSize
+                  0x003378                  _uxQueueGetQueueLength
+                  0x00353c                  _xQueueIsQueueEmptyFromISR
+                  0x003596                  _xQueueIsQueueFullFromISR
+                  0x0035d0                  _vQueueWaitForMessageRestricted
+ .text            0x003616        0xcba build/default/production/stream_buffer.o
+                  0x003616                  _xStreamBufferGenericCreate
+                  0x0036da                  _xStreamBufferGenericCreateStatic
+                  0x0037d2                  _xStreamBufferGetStaticBuffers
+                  0x00384a                  _vStreamBufferDelete
+                  0x003886                  _xStreamBufferReset
+                  0x0038ee                  _xStreamBufferResetFromISR
+                  0x003956                  _xStreamBufferSetTriggerLevel
+                  0x0039a0                  _xStreamBufferSpacesAvailable
+                  0x0039f4                  _xStreamBufferBytesAvailable
+                  0x003a1e                  _xStreamBufferSend
+                  0x003b70                  _xStreamBufferSendFromISR
+                  0x003c90                  _xStreamBufferReceive
+                  0x003da6                  _xStreamBufferNextMessageLengthBytes
+                  0x003e1a                  _xStreamBufferReceiveFromISR
+                  0x003f2a                  _xStreamBufferIsEmpty
+                  0x003f68                  _xStreamBufferIsFull
+                  0x003fb8                  _xStreamBufferSendCompletedFromISR
+                  0x00400c                  _xStreamBufferReceiveCompletedFromISR
+                  0x00423a                  _uxStreamBufferGetStreamBufferNotificationIndex
+                  0x004260                  _vStreamBufferSetStreamBufferNotificationIndex
+ .text            0x0042d0        0x75e build/default/production/timers.o
+                  0x0042d0                  _xTimerCreateTimerTask
+                  0x00432c                  _xTimerCreate
+                  0x00435e                  _xTimerCreateStatic
+                  0x00441a                  _xTimerGenericCommandFromTask
+                  0x004494                  _xTimerGenericCommandFromISR
+                  0x0044fa                  _xTimerGetTimerDaemonTaskHandle
+                  0x004518                  _xTimerGetPeriod
+                  0x00453e                  _vTimerSetReloadMode
+                  0x004586                  _xTimerGetReloadMode
+                  0x0045c4                  _uxTimerGetReloadMode
+                  0x0045d4                  _xTimerGetExpiryTime
+                  0x0045fe                  _xTimerGetStaticBuffer
+                  0x004640                  _pcTimerGetName
+                  0x0046dc                  build/default/production/timers.o:_prvTimerTask
+                  0x00498a                  _xTimerIsTimerActive
+                  0x0049c8                  _pvTimerGetTimerID
+                  0x0049f6                  _vTimerSetTimerID
+                  0x004a24                  _vTimerResetState
+ .text            0x004a2e        0x554 build/default/production/event_groups.o
+                  0x004a2e                  _xEventGroupCreateStatic
+                  0x004a82                  _xEventGroupCreate
+                  0x004aa6                  _xEventGroupSync
+                  0x004bb8                  _xEventGroupWaitBits
+                  0x004d04                  _xEventGroupClearBits
+                  0x004d5c                  _xEventGroupGetBitsFromISR
+                  0x004d74                  _xEventGroupSetBits
+                  0x004e6e                  _vEventGroupDelete
+                  0x004ed2                  _xEventGroupGetStaticBuffer
+                  0x004f26                  _vEventGroupSetBitsCallback
+                  0x004f38                  _vEventGroupClearBitsCallback
+ .text            0x004f82        0x150 build/default/production/port.o
+                  0x004f82                  _pxPortInitialiseStack
+                  0x005012                  _xPortStartScheduler
+                  0x005040                  _vPortEndScheduler
+                  0x00505e                  _vApplicationSetupTickTimerInterrupt
+                  0x005086                  _vPortEnterCritical
+                  0x0050a0                  _vPortExitCritical
+ .text            0x0050d2        0x128 build/default/production/list.o
+                  0x0050d2                  _vListInitialise
+                  0x005104                  _vListInitialiseItem
+                  0x005112                  _vListInsertEnd
+                  0x00514e                  _vListInsert
+                  0x0051b2                  _uxListRemove
+ .text            0x0051fa         0xa8 build/default/production/heap_1.o
+                  0x0051fa                  _pvPortMalloc
+                  0x005268                  _vPortFree
+                  0x005286                  _vPortInitialiseBlocks
+                  0x00528e                  _xPortGetFreeHeapSize
+                  0x00529a                  _vPortHeapResetState
+ .text            0x0052a2         0x50 build/default/production/portasm_PIC24.o
+                  0x0052a2                  _vPortYield
 
-.dinit            0x004e6c         0x2e
- .dinit           0x004e6c         0x2e data_init
+.dinit            0x0052f2         0x2e
+ .dinit           0x0052f2         0x2e data_init
 
-.text             0x004e9a         0x38
- .text            0x004e9a         0x22 build/default/production/user_app.o
-                  0x004e9a                  _config_user_app
-                  0x004ea2                  _task_1
- .text            0x004ebc         0x16 build/default/production/main.o
-                  0x004ebc                  _main
+.text             0x005320         0x38
+ .text            0x005320         0x22 build/default/production/user_app.o
+                  0x005320                  _config_user_app
+                  0x005328                  _task_1
+ .text            0x005342         0x16 build/default/production/main.o
+                  0x005342                  _main

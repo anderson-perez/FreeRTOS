@@ -1,6 +1,9 @@
 #include <p24FJ128GA010.h>
 
 #include "user_app.h"
+#include "FreeRTOS.h"
+#include <xc.h>
+
 
 void config_user_app()
 {
@@ -13,4 +16,3 @@ void task_1()
         LATDbits.LATD0 = ~PORTDbits.RD0;
     }
 }
-
