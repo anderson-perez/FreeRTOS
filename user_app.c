@@ -46,7 +46,7 @@ void config_user_app()
 {
     for (int i = 0; i < QTD; i++) {
         garfos[i] = xSemaphoreCreateBinary();   // Cria semáforo
-        xSemaphoreTake(garfos[i]);              // Seta em 1
+        xSemaphoreGive(garfos[i]);              // Seta em 1
     }
     
     // Configuração de portas dos leds que irão representar os filósofos

@@ -2,7 +2,8 @@
 #define	USER_APP_H
 
 #define EXAMPLE_1   0
-#define FILOSOFOS   1
+#define FILOSOFOS   0
+#define EXAMPLE_2   1
 
 #if EXAMPLE_1 == 1
 
