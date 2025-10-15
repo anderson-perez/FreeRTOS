@@ -3,7 +3,8 @@
 
 #define EXAMPLE_1   0
 #define FILOSOFOS   0
-#define EXAMPLE_2   1
+#define EXAMPLE_2   0
+#define EXAMPLE_3   1
 
 #if EXAMPLE_1 == 1
 
@@ -22,6 +23,18 @@ void f_4();
 
 void pensar();
 void comer(int f_id);
+
+#elif EXAMPLE_2 == 1
+
+void config_user_app();
+void task_1();
+void task_2();
+
+#elif EXAMPLE_3 == 1
+
+void config_user_app();
+void task_1();
+void task_2();
 
 #endif
 

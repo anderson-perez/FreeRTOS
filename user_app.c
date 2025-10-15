@@ -94,4 +94,60 @@ void comer(int f_id)
     xSemaphoreTake(garfos[(f_id+1) % QTD], portMAX_DELAY);    
 }
 
+#elif EXAMPLE_2 == 1
+
+SemaphoreHandle_t s_contador;
+
+void config_user_app()
+{
+    TRISDbits.TRISD0 = 0;
+    TRISDbits.TRISD1 = 0;
+    s_contador = xSemaphoreCreateCounting(5, 0);
+}
+
+void task_1()
+{
+    for (;;) {
+        xSemaphoreTake(s_contador, portMAX_DELAY);
+        LATDbits.LATD0 = ~PORTDbits.RD0;
+        vTaskDelay(10);
+    }
+}
+
+void task_2()
+{
+    while (1) {
+        LATDbits.LATD1 = ~PORTDbits.RD1;
+    }
+}
+
+#elif EXAMPLE_3 == 1
+
+SemaphoreHandle_t mutex;
+
+void config_user_app()
+{
+    TRISDbits.TRISD0 = 0;
+    TRISDbits.TRISD1 = 0;
+    mutex = xSemaphoreCreateMutex();
+}
+
+void task_1()
+{
+    for (;;) {
+        xSemaphoreTake(mutex, portMAX_DELAY);
+        LATDbits.LATD0 = ~PORTDbits.RD0;
+        vTaskDelay(5);
+        xSemaphoreGive(mutex);
+    }
+}
+
+void task_2()
+{
+    while (1) {
+        LATDbits.LATD1 = ~PORTDbits.RD0;
+        vTaskDelay(5);        
+    }
+}
+
 #endif
