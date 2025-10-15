@@ -4,7 +4,8 @@
 #define EXAMPLE_1   0
 #define FILOSOFOS   0
 #define EXAMPLE_2   0
-#define EXAMPLE_3   1
+#define EXAMPLE_3   0
+#define EXAMPLE_4   1
 
 #if EXAMPLE_1 == 1
 
@@ -35,6 +36,13 @@ void task_2();
 void config_user_app();
 void task_1();
 void task_2();
+
+#elif EXAMPLE_4 == 1
+
+void config_user_app();
+void task_1();
+void task_2();
+
 
 #endif
 

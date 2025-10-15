@@ -150,4 +150,64 @@ void task_2()
     }
 }
 
+#elif EXAMPLE_4 == 1
+
+QueueHandle_t fila;
+
+void config_user_app()
+{
+    TRISDbits.TRISD0 = 0;
+    TRISDbits.TRISD1 = 0;
+    
+    // Barra de leds
+    TRISGbits.TRISG0 = 0;
+    TRISGbits.TRISG1 = 0;
+    TRISGbits.TRISG2 = 0;
+    TRISGbits.TRISG3 = 0;
+    TRISGbits.TRISG6 = 0;
+    
+    fila = xQueueCreate(5, sizeof(int));
+}
+
+void task_1()
+{
+    int dados[] = {1, 2, 3, 4, 5}, index = 0;
+    
+    for (;;) {
+        LATDbits.LATD0 = ~PORTDbits.RD0;
+        xQueueSend(fila, &dados[index], portMAX_DELAY);
+        vTaskDelay(5);
+    }
+}
+
+void task_2()
+{
+    int dado;
+    
+    while (1) {
+        LATDbits.LATD1 = ~PORTDbits.RD0;
+        xQueueReceive(fila, &dado, portMAX_DELAY);
+        
+        switch (dado) {
+            
+            case 1: LATGbits.LATG0 = ~PORTGbits.RG0;
+                    break;
+                    
+            case 2: LATGbits.LATG1 = ~PORTGbits.RG1;
+                    break;
+                    
+            case 3: LATGbits.LATG2 = ~PORTGbits.RG2;
+                    break;
+                    
+            case 4: LATGbits.LATG3 = ~PORTGbits.RG3;
+                    break;
+                    
+            case 5: LATGbits.LATG6 = ~PORTGbits.RG6;
+                    break;
+        }
+        
+        vTaskDelay(5);        
+    }
+}
+
 #endif
