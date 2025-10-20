@@ -25,6 +25,19 @@ int main()
     
     xTaskCreate(task_1, "T1", configMINIMAL_STACK_SIZE, NULL, 3, NULL);
     xTaskCreate(task_2, "T2", configMINIMAL_STACK_SIZE, NULL, 3, NULL);
+
+    #elif EXAMPLE_4 == 1
+    config_user_app();
+    
+    xTaskCreate(task_1, "T1", configMINIMAL_STACK_SIZE, NULL, 3, NULL);
+    xTaskCreate(task_2, "T2", configMINIMAL_STACK_SIZE, NULL, 3, NULL);
+
+    #elif ALARME == 1
+    config_user_app();
+    
+    xTaskCreate(task_sensor, "T1", configMINIMAL_STACK_SIZE, NULL, 3, NULL);
+    xTaskCreate(task_lampada, "T2", configMINIMAL_STACK_SIZE, NULL, 3, NULL);
+    xTaskCreate(task_speaker, "T3", configMINIMAL_STACK_SIZE, NULL, 3, NULL);
     
     #endif    
     

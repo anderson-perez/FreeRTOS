@@ -5,7 +5,8 @@
 #define FILOSOFOS   0
 #define EXAMPLE_2   0
 #define EXAMPLE_3   0
-#define EXAMPLE_4   1
+#define EXAMPLE_4   0
+#define ALARME      1
 
 #if EXAMPLE_1 == 1
 
@@ -43,6 +44,12 @@ void config_user_app();
 void task_1();
 void task_2();
 
+#elif ALARME == 1
+
+void config_user_app();
+void task_sensor();
+void task_lampada();
+void task_speaker();
 
 #endif
 

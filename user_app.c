@@ -154,6 +154,7 @@ void task_2()
 
 QueueHandle_t fila;
 
+
 void config_user_app()
 {
     TRISDbits.TRISD0 = 0;
@@ -177,6 +178,7 @@ void task_1()
         LATDbits.LATD0 = ~PORTDbits.RD0;
         xQueueSend(fila, &dados[index], portMAX_DELAY);
         vTaskDelay(5);
+        index = (index + 1) % 5;
     }
 }
 
@@ -204,10 +206,71 @@ void task_2()
                     
             case 5: LATGbits.LATG6 = ~PORTGbits.RG6;
                     break;
-        }
+        }    
         
         vTaskDelay(5);        
     }
 }
+
+#elif ALARME == 1
+
+QueueHandle_t mensagem;
+SemaphoreHandle_t s;
+
+void config_user_app()
+{
+    TRISDbits.TRISD0    = 1;
+    TRISFbits.TRISF3    = 0;
+    TRISGbits.TRISG12   = 0;
+    
+    mensagem = xQueueCreate(1, sizeof(char));
+    s = xSemaphoreCreateBinary();
+}
+
+void task_sensor()
+{
+    char dado;
+    
+    for (;;) {
+        if (PORTDbits.RD0 == 1) {
+            dado = 'L';
+            xQueueSend(mensagem, &dado, portMAX_DELAY);
+        }
+        else {
+            dado = 'D';
+            xQueueSend(mensagem, &dado, portMAX_DELAY);
+        }
+        vTaskDelay(20);      
+    }
+}
+
+void task_lampada()
+{
+    char comando;
+    
+    for (;;) {
+        xQueueReceive(mensagem, &comando, portMAX_DELAY);
+        if (comando == 'L') {
+            PORTFbits.RF3 = 1;
+            xSemaphoreGive(s);
+        }
+        else if (comando == 'D') {
+            PORTFbits.RF3 = 0;
+        }
+        vTaskDelay(20);
+    }
+    
+}
+
+void task_speaker()
+{
+    for (;;) {
+        xSemaphoreTake(s, portMAX_DELAY);
+        PORTGbits.RG12 = 1;
+        vTaskDelay(50);
+        PORTGbits.RG12 = 0;
+    }    
+}
+
 
 #endif
