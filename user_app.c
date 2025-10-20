@@ -272,5 +272,42 @@ void task_speaker()
     }    
 }
 
+#elif DIP == 1
+
+QueueHandle_t mensagem;
+SemaphoreData_t s_contador;
+
+void config_user_app()
+{
+    // Incializar a fila de mensagens
+    mensagem = xQueueCreate(1, sizeof(msg_t))
+    
+    // Inicializar o semáforo contador
+    s_contador = xSemaphoreCreateCounting(4, 0);
+    
+    // Portas do hardware
+}
+
+void task_dip()
+{
+    for (;;) {
+        
+    }
+}
+
+void task_geral()
+{
+    for (;;) {
+        
+    }
+}
+
+void task_leds()
+{
+    for (;;) {
+        
+    }
+}
+
 
 #endif

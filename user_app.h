@@ -6,7 +6,9 @@
 #define EXAMPLE_2   0
 #define EXAMPLE_3   0
 #define EXAMPLE_4   0
-#define ALARME      1
+#define ALARME      0
+#define DIP         1
+
 
 #if EXAMPLE_1 == 1
 
@@ -50,6 +52,20 @@ void config_user_app();
 void task_sensor();
 void task_lampada();
 void task_speaker();
+
+#elif DIP == 1
+
+typedef struct mensagem {
+    int led_1;
+    int led_2;
+    int led_3;
+    int led_4;
+} msg_t;
+
+void config_user_app();
+void task_dip();
+void task_geral();
+void task_leds();
 
 #endif
 
